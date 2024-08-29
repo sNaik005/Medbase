@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
+
+.body {
+  margin: auto;
+  background-color: lightskyblue;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pageButton {
+  width: 20vw;
+  height: 6vw;
+  /* position: absolute; */
+  /* left: 50vw;
+  top: 50vh; */
+  /* transform: translate(-50%,-80%); */
+  font-family: 'Varela Round', sans-serif;
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  color: #e8e8e8;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background: linear-gradient(45deg,#d350db,teal,#d350db);
+  background-size: 400% 400%;
+  box-shadow: 0.75vw 0.75vw 0 lightcoral;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
+  &:hover {
+    animation: gradient 10s ease infinite;
+    font-size: 2.05vw;
+    box-shadow: 0.2vw 0.2vw 0 lightcoral;
+  }
+}
+
+@keyframes gradient {
+  50% {
+    background-position: 100% 0;
+  }
+}
+.pageContainer{
+  background-color: white;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* width: 100%; */
+  padding: 42px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.container{
+  width: 60%;
+}

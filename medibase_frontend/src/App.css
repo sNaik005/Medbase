@@ -1,0 +1,74 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.typewritter{
+	font-family: monospace;
+	display: inline-block
+}
+
+.typewritter-text{
+	display: inline-block;
+	overflow: hidden;
+	letter-spacing: 3px;
+	animation: typing 5s steps(39,end),blink .75s step-end infinite;
+  animation-iteration-count: infinite;
+  
+	white-space: nowrap;
+	font-size: 40px;
+	font-weight: 700;
+	border-right: 4px solid orange;
+	box-sizing: border-box;
+}
+
+@keyframes typing{
+	from{
+		width: 0%
+	}
+	to{
+		width: 100%;
+	}
+  
+}
+
+@keyframes blink{
+	from,to{
+		border-color: transparent
+	}
+	50%{border-color: orange}
+}
